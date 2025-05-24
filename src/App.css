@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background: linear-gradient(90deg, #2d2f70 0%, #5f0a87 100%);
   min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contain{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  width: fit-content;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: linear-gradient(90deg, #5f0a87 100%, #2d2f70 0%);
+  margin-bottom: 20px;
+  margin-top: 15px;
+  border-bottom: 3px solid #000000;
+}
+
+.uploader {
+  max-width: 450px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 32px 28px;
+}
+
+.dropzone {
+  border: 2px dashed #a4508b;
+  border-radius: 12px;
+  padding: 40px 0;
+  text-align: center;
+  color: #a4508b;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: 0.2s, border-color 0.2s;
+}
+
+.dropzone.active {
+  background: #f3e6f7;
+  border-color: #5f0a87;
+}
+
+.or-comp{
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 8px;
+}
+.or-left{
+  font-size: 2rem;
+  padding-bottom: 7px;
+  padding-right: 7px;
+}
+.letter-or{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.or-right{
+  font-size: 2rem;
+  padding-bottom: 7px;
+  padding-left: 7px;
 }
 
-.App-link {
-  color: #61dafb;
+.drive-btn {
+  width: 100%;
+  background: #5f0a87;
+  color: #fff;
+  padding: 14px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.drive-btn:hover {
+  background: #a4508b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.file-list {
+  margin-top: 20px;
+}
+
+.file-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  font-size: 1rem;
+}
+
+.link{
+   max-width: 100%; ;
 }
